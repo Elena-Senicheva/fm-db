@@ -44,6 +44,7 @@ class User {
       `
     );
     return rows;
+    console.log(rows);
   }
 
   static async deleteById (id) {
@@ -61,3 +62,5 @@ class User {
 }
 
 module.exports = User;
+
+
