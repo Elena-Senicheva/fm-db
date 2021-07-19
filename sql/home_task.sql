@@ -21,7 +21,7 @@ WHERE "brand"= 'Iphone';
 SELECT * FROM phones
 WHERE "price" > 10000 AND "price" < 20000;
 /* */
-SELECT "brand",MIN("quantity") AS "min" FROM phones
+SELECT "brand", SUM("quantity") AS "min" FROM phones
 GROUP BY "brand"
 ORDER BY "min"
 LIMIT 3;
