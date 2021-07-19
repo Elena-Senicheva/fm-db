@@ -18,7 +18,7 @@ ORDER BY "userId";
 SELECT AVG("price") FROM phones
 WHERE "brand"= 'Iphone';
 /* */
-SELECT * FROM phones
+SELECT SUM(price) FROM phones
 WHERE "price" > 10000 AND "price" < 20000;
 /* */
 SELECT "brand", SUM("quantity") AS "min" FROM phones
